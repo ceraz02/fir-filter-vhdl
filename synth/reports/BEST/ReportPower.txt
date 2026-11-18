@@ -1,0 +1,69 @@
+Loading db file '/softslin/AMS_410_ISR15/synopsys/c35_3.3V/c35_CORELIB_TYP.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : filter
+Version: J-2014.09-SP2
+Date   : Wed Mar 19 14:59:07 2025
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /softslin/AMS_410_ISR15/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+
+Operating Conditions: BEST   Library: c35_CORELIB_TYP
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+filter                 10k               c35_CORELIB_TYP
+rom                    10k               c35_CORELIB_TYP
+delay_line             10k               c35_CORELIB_TYP
+mult                   10k               c35_CORELIB_TYP
+accu                   10k               c35_CORELIB_TYP
+buff                   10k               c35_CORELIB_TYP
+fsm                    10k               c35_CORELIB_TYP
+adc_interface          10k               c35_CORELIB_TYP
+dac_interface          10k               c35_CORELIB_TYP
+register_1             10k               c35_CORELIB_TYP
+mult_DW02_mult_0       10k               c35_CORELIB_TYP
+accu_DW02_mult_0       10k               c35_CORELIB_TYP
+accu_DW01_add_1        10k               c35_CORELIB_TYP
+mult_DW01_add_1        10k               c35_CORELIB_TYP
+
+
+Global Operating Voltage = 3.6  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   5.0638 mW   (90%)
+  Net Switching Power  = 534.2153 uW   (10%)
+                         ---------
+Total Dynamic Power    =   5.5980 mW  (100%)
+
+Cell Leakage Power     =   1.4167 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           4.9242        4.2411e-02          887.1218            4.9666  (  88.72%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1397            0.4918          529.6178            0.6315  (  11.28%)
+--------------------------------------------------------------------------------------------------
+Total              5.0638 mW         0.5342 mW     1.4167e+03 pW         5.5980 mW

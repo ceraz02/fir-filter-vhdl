@@ -1,0 +1,102 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : filter
+Version: J-2014.09-SP2
+Date   : Wed Mar 19 14:57:32 2025
+****************************************
+
+Operating Conditions: BEST   Library: c35_CORELIB_TYP
+Wire Load Model Mode: enclosed
+
+  Startpoint: u6/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u4/accu_reg[17]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter             10k                   c35_CORELIB_TYP
+  fsm                10k                   c35_CORELIB_TYP
+  delay_line         10k                   c35_CORELIB_TYP
+  mult_DW02_mult_0   10k                   c35_CORELIB_TYP
+  mult_DW01_add_1    10k                   c35_CORELIB_TYP
+  accu_DW01_add_1    10k                   c35_CORELIB_TYP
+  accu               10k                   c35_CORELIB_TYP
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u6/current_state_reg[1]/C (DFC3)                        0.00       0.00 r
+  u6/current_state_reg[1]/QN (DFC3)                       0.59       0.59 r
+  u6/U21/Q (NAND31)                                       0.21       0.80 f
+  u6/U7/Q (NOR21)                                         0.93       1.74 r
+  u6/delay_line_address[3] (fsm)                          0.00       1.74 r
+  u2/delay_line_address[3] (delay_line)                   0.00       1.74 r
+  u2/U101/Q (NOR21)                                       0.40       2.14 f
+  u2/U23/Q (NAND22)                                       0.14       2.28 r
+  u2/U22/Q (INV3)                                         0.23       2.51 f
+  u2/U219/Q (AOI221)                                      0.17       2.68 r
+  u2/U218/Q (NAND41)                                      0.07       2.76 f
+  u2/U172/Q (NOR40)                                       0.29       3.04 r
+  u2/U140/Q (OAI222)                                      0.07       3.11 f
+  u2/delay_line_out[1] (delay_line)                       0.00       3.11 f
+  u3/mult_in_a[1] (mult)                                  0.00       3.11 f
+  u3/mult_18/A[1] (mult_DW02_mult_0)                      0.00       3.11 f
+  u3/mult_18/U137/Q (INV3)                                0.18       3.29 r
+  u3/mult_18/U75/Q (NOR21)                                0.15       3.44 f
+  u3/mult_18/U12/Q (INV3)                                 0.09       3.53 r
+  u3/mult_18/U82/Q (NOR21)                                0.13       3.66 f
+  u3/mult_18/S3_2_6/CO (ADD32)                            0.25       3.91 f
+  u3/mult_18/S3_3_6/S (ADD32)                             0.32       4.23 r
+  u3/mult_18/S2_4_5/S (ADD32)                             0.31       4.54 r
+  u3/mult_18/S2_5_4/S (ADD32)                             0.31       4.84 r
+  u3/mult_18/S2_6_3/S (ADD32)                             0.31       5.15 r
+  u3/mult_18/S4_2/S (ADD32)                               0.31       5.46 r
+  u3/mult_18/U13/Q (INV3)                                 0.04       5.50 f
+  u3/mult_18/U3/Q (NOR21)                                 0.34       5.84 r
+  u3/mult_18/FS_1/B[8] (mult_DW01_add_1)                  0.00       5.84 r
+  u3/mult_18/FS_1/U27/Q (XNR21)                           0.26       6.10 f
+  u3/mult_18/FS_1/U25/Q (IMUX21)                          0.19       6.29 r
+  u3/mult_18/FS_1/SUM[8] (mult_DW01_add_1)                0.00       6.29 r
+  u3/mult_18/PRODUCT[10] (mult_DW02_mult_0)               0.00       6.29 r
+  u3/mult_out[10] (mult)                                  0.00       6.29 r
+  u4/accu_in[10] (accu)                                   0.00       6.29 r
+  u4/add_27_aco/B[10] (accu_DW01_add_1)                   0.00       6.29 r
+  u4/add_27_aco/U60/Q (INV3)                              0.03       6.32 f
+  u4/add_27_aco/U58/Q (NAND22)                            0.17       6.49 r
+  u4/add_27_aco/U80/Q (AOI211)                            0.08       6.56 f
+  u4/add_27_aco/U78/Q (NOR21)                             0.13       6.69 r
+  u4/add_27_aco/U57/Q (INV3)                              0.03       6.72 f
+  u4/add_27_aco/U54/Q (NAND31)                            0.29       7.01 r
+  u4/add_27_aco/U6/Q (INV3)                               0.06       7.07 f
+  u4/add_27_aco/U10/Q (NOR31)                             0.12       7.19 r
+  u4/add_27_aco/U52/Q (NOR21)                             0.12       7.31 f
+  u4/add_27_aco/U166/Q (OAI212)                           0.15       7.46 r
+  u4/add_27_aco/U3/Q (INV3)                               0.08       7.53 f
+  u4/add_27_aco/U77/Q (NOR21)                             0.13       7.66 r
+  u4/add_27_aco/U76/Q (XNR21)                             0.19       7.85 f
+  u4/add_27_aco/SUM[17] (accu_DW01_add_1)                 0.00       7.85 f
+  u4/accu_reg[17]/D (DFC3)                                0.00       7.85 f
+  data arrival time                                                  7.85
+
+  clock clock (rise edge)                                20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  u4/accu_reg[17]/C (DFC3)                                0.00      20.00 r
+  library setup time                                      0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                 -7.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.15
+
+
